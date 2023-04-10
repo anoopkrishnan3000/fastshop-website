@@ -1,10 +1,18 @@
+import { AppBar, Toolbar, styled }  from '@mui/material';
+
+
+const StyledHeader = styled(AppBar)'
+  
+'
 
 
 const Header = () => {
     return (
-        <div className="App">
-        ANOOP KRISHNAN
-        </div>
+        <AppBar>
+            <Toolbar>
+
+            </Toolbar>
+        </AppBar>
     );
 }
 
