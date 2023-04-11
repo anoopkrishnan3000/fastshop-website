@@ -1,15 +1,24 @@
 import { InputBase, Box, styled } from '@mui/material';
+import SearchIcon from '@mui/icons-material/Search';
 
 
 const SearchContainer = styled(Box)`
-  background = #fff;
+  background: #fff;
   width: 38%;
   border-radius: 2px;
   margin-left: 10px;
+  display: flex;
 
 `
 const InputSearchBase = styled(InputBase)`
+     padding-left: 20px;
+     width: 100%;
+`
 
+const SearchIconWrapper = styled(Box)`
+    color: blue;
+    padding: 5px;
+    font-size: unset;
 `
 
 const Search = () => {
@@ -17,9 +26,12 @@ const Search = () => {
 
     return (
         <SearchContainer>
-            <InputBase
-            placeholder='Search for products, brands and more'
-        />
+            <InputSearchBase
+                placeholder='Search for products, brands and more'
+            />
+            <SearchIconWrapper>
+                <SearchIcon />
+            </SearchIconWrapper>
         </SearchContainer>
         
     )
